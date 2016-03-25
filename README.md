@@ -27,7 +27,7 @@ Make sure this is working by entering:
 protractor --version
 ```
 
-We then need to update `webdriver`, which is provided to us when we install protractor.
+We then need to update `webdriver`, which is provided to us when we install protractor. (Note: If you get an error stating `permission denied`, you may need to add `sudo ` to the beginning of the following command.)
 
 ```bash
 webdriver-manager update
@@ -45,7 +45,7 @@ Let's write a protractor test.
 
 Protractor lets us grab web pages and interact with elements on the page.
 
-To start, we need to load a page to interact with. For this example, we're going to grab Angular's website. To do this, we'll call the `get` method on our `browser` object and pass in a URL. 
+To start, we need to load a page to interact with. For this example, we're going to grab Angular's website. To do this, we'll call the `get` method on our `browser` object and pass in a URL.
 
 ```js
 describe('Angular Website', function() {
